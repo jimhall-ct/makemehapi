@@ -8,10 +8,6 @@ server.connection({
     port: Number(process.argv[2] || 8080)
 });
 
-const schema = Joi.object().keys({
-    breed: Joi.string().required()
-})
-
 server.route([
     {
         method: 'GET',
